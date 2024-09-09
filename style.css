@@ -1,0 +1,55 @@
+:root {
+    --highlight: #FABC3F;
+    --darkyellow: #ca8a04;
+    --background: #FABC3F;
+    --lightBackground: #F8F8F8;
+    --bgnav: #000000;
+    --textlight: #f4f4f5;
+    --textdim: #51518b;
+    --textdark: #18181b;
+}
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'gilroy';
+}
+ 
+html,body{
+height: 100%;
+width: 100%;
+}
+
+body{
+    background-color: #111827;
+}
+
+
+nav{
+    position: sticky;
+    left: 0;
+    top: 0;
+    position: fixed;
+    height: 10vh;
+}
+main{
+    margin-top: 10vh;
+}
+
+.hero {
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('/images/gym.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Full viewport height */
+    width: 100%; /* Full width */
+}
+
+.about h1{
+    color: white;
+}
+
+.about p{
+    color: white;
+}

@@ -8,6 +8,9 @@
     --textdim: #51518b;
     --textdark: #18181b;
 }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 * {
 margin: 0;

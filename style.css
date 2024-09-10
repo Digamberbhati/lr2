@@ -209,11 +209,8 @@ main{
   border-radius: 0;
   width: 100%;
   height: 100%;
-<<<<<<< HEAD
   background: #F4FCFF;
   z-index: 1;
-=======
->>>>>>> 64fbfa0b5dc2cff24b24325323bcdd1da4e2cebd
 }
 
 
@@ -290,7 +287,6 @@ main{
       filter: blur(0);
   }
 }
-<<<<<<< HEAD
 @media (max-width: 450px) {
   
    .counter-wrapper{
@@ -376,13 +372,13 @@ main{
 	font-weight: bold;
 	transition: .4s ease-in-out;
 }
-.card .info .btn:hover {
+.card .info .btn:hover{
 	background: #fc5185;
 	color: #fff;
 	box-shadow: 0 7px 10px rgba(0, 0, 0, 0.5);
 =======
 
-
+}
 
 .button{
   width: 100%;
@@ -405,5 +401,79 @@ main{
 .button button:hover{
   background: #ababab;
   color: #fff;
->>>>>>> 64fbfa0b5dc2cff24b24325323bcdd1da4e2cebd
+
+}
+
+.counter-wrapper{
+  background: url(img/success2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 1.5rem;
+  padding: 10rem 9%;
+  margin-top: 5rem;
+  position: relative;
+}
+.counter-wrapper::before{
+  position: absolute;
+  content: '';
+  content: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #F4FCFF;
+  z-index: 1;
+}
+.counter{
+ text-align: center;   
+ color: #000;
+ z-index: 2;
+ position: relative;
+}
+.counter::before{
+  position: absolute;
+  content: '';
+  bottom: -2rem;
+  left: 50%;
+  width: 20%;
+  height: .2rem;
+  background: #4DB7FE;
+  border-radius: .5rem;
+  -webkit-border-radius: .5rem;
+  -moz-border-radius: .5rem;
+  -ms-border-radius: .5rem;
+  -o-border-radius: .5rem;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+.counter .count{
+  font-size: 5rem;
+  margin-bottom: 1rem;    
+}
+.counter p{
+  font-size: 1.4rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .counter-wrapper{
+      grid-template-columns: repeat(2, 1fr);
+      grid-row-gap: 8rem;
+  }
+}
+@media (max-width: 450px) {
+
+   .counter-wrapper{
+       grid-template-columns: 1fr;
+   }
 }

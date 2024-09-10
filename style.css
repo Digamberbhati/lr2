@@ -290,7 +290,6 @@ main{
       filter: blur(0);
   }
 }
-<<<<<<< HEAD
 @media (max-width: 450px) {
   
    .counter-wrapper{
@@ -380,7 +379,6 @@ main{
 	background: #fc5185;
 	color: #fff;
 	box-shadow: 0 7px 10px rgba(0, 0, 0, 0.5);
-=======
 
 
 
@@ -405,5 +403,4 @@ main{
 .button button:hover{
   background: #ababab;
   color: #fff;
->>>>>>> 64fbfa0b5dc2cff24b24325323bcdd1da4e2cebd
 }

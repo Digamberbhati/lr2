@@ -1,5 +1,6 @@
 document.getElementById('menu-toggle').addEventListener('click', function () {
-    var navbar = document.getElementById('navbar-sticky');
+  console.log("hello world")
+    var navbar = document.getElementById('navbar');
     navbar.classList.toggle('hidden');
 });
 

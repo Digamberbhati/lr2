@@ -376,8 +376,6 @@ main{
 	background: #fc5185;
 	color: #fff;
 	box-shadow: 0 7px 10px rgba(0, 0, 0, 0.5);
-=======
-
 }
 
 .button{
@@ -405,10 +403,7 @@ main{
 }
 
 .counter-wrapper{
-  background: url(img/success2.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 1.5rem;

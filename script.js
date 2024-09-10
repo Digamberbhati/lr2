@@ -97,4 +97,3 @@ const observer = new IntersectionObserver(handleIntersection, {
 counts.forEach(count => {
     observer.observe(count);  // Start observing each .count element
 });
-

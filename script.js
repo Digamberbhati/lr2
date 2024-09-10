@@ -58,20 +58,43 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-const counts = document.querySelectorAll('.count')
-const speed = 97
+const counts = document.querySelectorAll('.count');
+const speed = 97;
 
-counts.forEach((counter) => {
-    function upDate(){
-        const target = Number(counter.getAttribute('data-target'))
-        const count = Number(counter.innerText)
-        const inc = target / speed        
-        if(count < target){
-            counter.innerText = Math.floor(inc + count) 
-            setTimeout(upDate, 15)
-        }else{
-            counter.innerText = target
+// Function to animate the count
+function runCounter(counter) {
+    function upDate() {
+        const target = Number(counter.getAttribute('data-target'));
+        const count = Number(counter.innerText);
+        const inc = target / speed;
+        
+        if (count < target) {
+            counter.innerText = Math.floor(inc + count);
+            setTimeout(upDate, 15);
+        } else {
+            counter.innerText = target;
         }
     }
-    upDate()
-})
+    upDate();
+}
+
+// IntersectionObserver callback
+function handleIntersection(entries, observer) {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const counter = entry.target;
+            runCounter(counter);  // Run the counter when the element is in view
+            observer.unobserve(counter);  // Stop observing once the animation starts
+        }
+    });
+}
+
+// Set up IntersectionObserver
+const observer = new IntersectionObserver(handleIntersection, {
+    threshold: 0.5 // Adjust as needed (0.5 means 50% of the element needs to be visible)
+});
+
+counts.forEach(count => {
+    observer.observe(count);  // Start observing each .count element
+});
+

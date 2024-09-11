@@ -97,3 +97,11 @@ const observer = new IntersectionObserver(handleIntersection, {
 counts.forEach(count => {
     observer.observe(count);  // Start observing each .count element
 });
+
+document.getElementById('myForm').addEventListener('submit', function(event) {
+  event.preventDefault(); 
+  this.submit();
+  this.reset(); 
+
+  
+});

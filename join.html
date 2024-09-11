@@ -68,25 +68,28 @@
               
     <!--join us form -->
 <h1 class="text-center font-black sm:text-[4vw] text-[5vh] mt-4 sm:mt-2 mb-10 sm:mb-4 ">Connect Now</h1>
-<form class=" max-w-sm mx-auto  ">
 
-    <div class="  mb-5 ">
-      <label for="email" class="block mb-2 text-sm  text-zinc-100 font-bold "> Email</label>
-      <input type="email" id="email" class=" text-black rounded-lg border border-2 p-2.5 w-full outline-none bg-zinc-200 " placeholder="name@gmail.com" required />
+<!-- Form -->
+<form action="https://api.web3forms.com/submit" method="POST" class="max-w-sm mx-auto" id="myForm">
+
+    <input type="hidden" name="access_key" value="379d7b37-1aed-444c-affe-09ed08831892">
+  
+    <div class="mb-5">
+      <label for="email" class="block mb-2 text-sm text-zinc-100 font-bold">Email</label>
+      <input type="email" name="email" id="email" class="text-black rounded-lg border border-2 p-2.5 w-full outline-none bg-zinc-200" placeholder="name@gmail.com" required />
     </div>
-
-    <div class="  mb-5 ">
-        <label for="name" class="block mb-2 text-sm  text-zinc-100 font-bold "> Name</label>
-        <input type="text" id="name" class="text-black  rounded-lg border border-2 p-2.5 w-full outline-none bg-zinc-200 " placeholder="Full Name" required />
-      </div>
-   
-      <div class="  mb-5 ">
-      <label for="goals" class="block mb-2 text-sm  text-zinc-100 font-bold ">Select your Goal</label>
-      <select id="goals" class="text-black  rounded-lg border border-2 p-2.5 w-full outline-none bg-zinc-200">
-    
+  
+    <div class="mb-5">
+      <label for="name" class="block mb-2 text-sm text-zinc-100 font-bold">Name</label>
+      <input type="text" name="name" id="name" class="text-black rounded-lg border border-2 p-2.5 w-full outline-none bg-zinc-200" placeholder="Full Name" required />
+    </div>
+  
+    <div class="mb-5">
+      <label for="goals" class="block mb-2 text-sm text-zinc-100 font-bold">Select your Goal</label>
+      <select id="goals" name="goals" class="text-black rounded-lg border border-2 p-2.5 w-full outline-none bg-zinc-200">
         <option>Weight Gain</option>
-        <option>Weight Loose</option>
-        <option>Presnol Training</option>
+        <option>Weight Loss</option>
+        <option>Personal Training</option>
         <option>Muscle Building</option>
         <option>Endurance Training</option>
         <option>Flexibility Improvement</option>
@@ -97,35 +100,29 @@
         <option>Sports Performance</option>
       </select>
     </div>
-
-
-    <div class="  mb-5 ">
-        <label for="timing" class="block mb-2 text-sm  text-zinc-100 font-bold ">Select your Prefer Timing</label>
-        <select id="timing" class="text-black  rounded-lg border border-2 p-2.5 w-full outline-none bg-zinc-200">
-      
-          <option>Morning</option>
-          <option>Evening</option>
-    
-        </select>
-      </div>
-
-
-      <div class="  mb-5 ">
-        <label for="plans" class="block mb-2 text-sm  text-zinc-100 font-bold ">Select your Plan</label>
-        <select id="plans" class="text-black  rounded-lg border border-2 p-2.5 w-full outline-none bg-zinc-200">
-      
-          <option>3 Months</option>
-          <option>6 Months</option>
-          <option>9 Months</option>
-          <option>12 Months</option>
-          
-    
-        </select>
-      </div>
-
-
-    <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">submit</button>
+  
+    <div class="mb-5">
+      <label for="timing" class="block mb-2 text-sm text-zinc-100 font-bold">Select your Preferred Timing</label>
+      <select id="timing" name="timing" class="text-black rounded-lg border border-2 p-2.5 w-full outline-none bg-zinc-200">
+        <option>Morning</option>
+        <option>Evening</option>
+      </select>
+    </div>
+  
+    <div class="mb-5">
+      <label for="plans" class="block mb-2 text-sm text-zinc-100 font-bold">Select your Plan</label>
+      <select id="plans" name="plans" class="text-black rounded-lg border border-2 p-2.5 w-full outline-none bg-zinc-200">
+        <option>3 Months</option>
+        <option>6 Months</option>
+        <option>9 Months</option>
+        <option>12 Months</option>
+      </select>
+    </div>
+  
+    <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
+  
   </form>
+  
   
             
 

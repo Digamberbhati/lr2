@@ -46,6 +46,10 @@ body{
     overflow-x: hidden;
 }
 
+::selection {
+  background-color: black;
+  color: #1D4ED8;
+}
 
 nav{
     position: sticky;
@@ -922,3 +926,6 @@ main{
 .item-right-8 {
   animation-delay: calc(30s / 8 * (8 - 8) * -1);
 }
+
+
+

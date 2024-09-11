@@ -406,7 +406,7 @@ main{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 1.5rem;
-  padding: 10rem 9%;
+  padding: 4rem 9%;
   margin-top: 5rem;
   position: relative;
 }

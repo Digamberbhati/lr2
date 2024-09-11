@@ -805,3 +805,120 @@ main{
       font-size: 1rem;
   }
 }
+
+
+
+.scroll-wrapper {
+  margin-top: 2rem;
+  width: 90%;
+  max-width: 1536px;
+  margin-inline: auto;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0)
+  );
+}
+
+@keyframes scroll-left {
+  to {
+    left: -200px;
+  }
+}
+
+@keyframes scroll-right {
+  to {
+    right: -200px;
+  }
+}
+
+.scroll-item-left,
+.scroll-item-right {
+  width: 200px;
+  height: 100px;
+  background-color: transparent;
+  border-radius: 6px;
+  position: absolute;
+  animation-timing-function: linear;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+}
+
+.scroll-item-left {
+  left: max(calc(200px * 8), 100%);
+  animation-name: scroll-left;
+}
+
+.scroll-item-right {
+  right: max(calc(200px * 8), calc(100% + 200px));
+  animation-name: scroll-right;
+}
+
+.item-left-1 {
+  animation-delay: calc(30s / 8 * (8 - 1) * -1);
+}
+
+.item-left-2 {
+  animation-delay: calc(30s / 8 * (8 - 2) * -1);
+}
+
+.item-left-3 {
+  animation-delay: calc(30s / 8 * (8 - 3) * -1);
+}
+
+.item-left-4 {
+  animation-delay: calc(30s / 8 * (8 - 4) * -1);
+}
+
+.item-left-5 {
+  animation-delay: calc(30s / 8 * (8 - 5) * -1);
+}
+
+.item-left-6 {
+  animation-delay: calc(30s / 8 * (8 - 6) * -1);
+}
+
+.item-left-7 {
+  animation-delay: calc(30s / 8 * (8 - 7) * -1);
+}
+
+.item-left-8 {
+  animation-delay: calc(30s / 8 * (8 - 8) * -1);
+}
+
+.item-right-1 {
+  animation-delay: calc(30s / 8 * (8 - 1) * -1);
+}
+
+.item-right-2 {
+  animation-delay: calc(30s / 8 * (8 - 2) * -1);
+}
+
+.item-right-3 {
+  animation-delay: calc(30s / 8 * (8 - 3) * -1);
+}
+
+.item-right-4 {
+  animation-delay: calc(30s / 8 * (8 - 4) * -1);
+}
+
+.item-right-5 {
+  animation-delay: calc(30s / 8 * (8 - 5) * -1);
+}
+
+.item-right-6 {
+  animation-delay: calc(30s / 8 * (8 - 6) * -1);
+}
+
+.item-right-7 {
+  animation-delay: calc(30s / 8 * (8 - 7) * -1);
+}
+
+.item-right-8 {
+  animation-delay: calc(30s / 8 * (8 - 8) * -1);
+}

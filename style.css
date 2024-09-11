@@ -367,7 +367,7 @@ main{
 	transition: .4s ease-in-out;
 }
 .card .info .btn:hover {
-	background: #fc5185;
+	background: #2c64f3fd;
 	color: #fff;
 	box-shadow: 0 7px 10px rgba(0, 0, 0, 0.5);
 

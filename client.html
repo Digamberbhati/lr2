@@ -81,42 +81,42 @@
             <div class="slide">
 
 
-                <div class="item" style="background-image: url(https://i.ibb.co/qCkd9jS/img1.jpg);">
+                <div class="item" style="background-image: url(./images/personal/arm.jpg); background-position: center;">
                     <div class="content">
                         <div class="name">Switzerland</div>
                         <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
                         <button>See More</button>
                     </div>
                 </div>
-                <div class="item" style="background-image: url(https://i.ibb.co/jrRb11q/img2.jpg);">
+                <div class="item" style="background-image: url(./images/personal/award.jpg);">
                     <div class="content">
                         <div class="name">Finland</div>
                         <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
                         <button>See More</button>
                     </div>
                 </div>
-                <div class="item" style="background-image: url(https://i.ibb.co/NSwVv8D/img3.jpg);">
+                <div class="item" style="background-image: url(./images//personal/cleb.jpg);">
                     <div class="content">
                         <div class="name">Iceland</div>
                         <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
                         <button>See More</button>
                     </div>
                 </div>
-                <div class="item" style="background-image: url(https://i.ibb.co/Bq4Q0M8/img4.jpg);">
+                <div class="item" style="background-image: url(./images/personal/group.jpg);">
                     <div class="content">
                         <div class="name">Australia</div>
                         <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
                         <button>See More</button>
                     </div>
                 </div>
-                <div class="item" style="background-image: url(https://i.ibb.co/jTQfmTq/img5.jpg);">
+                <div class="item" style="background-image: url(./images/personal/hw.jpg);">
                     <div class="content">
                         <div class="name">Netherland</div>
                         <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
                         <button>See More</button>
                     </div>
                 </div>
-                <div class="item" style="background-image: url(https://i.ibb.co/RNkk6L0/img6.jpg);">
+                <div class="item" style="background-image: url(./images/personal/meetup.jpg);">
                     <div class="content">
                         <div class="name">Ireland</div>
                         <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
@@ -252,40 +252,32 @@
                 },
                 {
                     "name": "Bob Smith",
-                    "image": "https://example.com/images/bob-smith.jpg",
+                    "image":"./images/clients/client1.jpg",
                     "review": "Bob's project was challenging but rewarding. He had a great vision and was very collaborative throughout the process."
                 },
                 {
                     "name": "Carol Lee",
-                    "image": "https://example.com/images/carol-lee.jpg",
+                    "image": "./images/clients/client1.jpg",
                     "review": "Carol's feedback was always constructive, and she was very patient during the development phases. A pleasure to work with."
                 },
                 {
                     "name": "David Brown",
-                    "image": "https://example.com/images/david-brown.jpg",
+                    "image": "./images/clients/client1.jpg",
                     "review": "David provided clear instructions and was very responsive. His project requirements were well-defined and straightforward."
                 },
                 {
                     "name": "David Brown",
-                    "image": "https://example.com/images/david-brown.jpg",
+                    "image": "./images/clients/client1.jpg",
                     "review": "David provided clear instructions and was very responsive. His project requirements were well-defined and straightforward."
                 },
 
                 {
                     "name": "Frank Wilson",
-                    "image": "https://example.com/images/frank-wilson.jpg",
+                    "image": "./images/clients/client1.jpg",
                     "review": "Frank's project was ambitious, but he was supportive and open to suggestions. Working with him was a positive experience."
-                },
-                {
-                    "name": "Grace Martinez",
-                    "image": "https://example.com/images/grace-martinez.jpg",
-                    "review": "Grace was a fantastic client. She had a strong understanding of her requirements and was very collaborative throughout the project."
-                },
-                {
-                    "name": "Henry Clark",
-                    "image": "https://example.com/images/henry-clark.jpg",
-                    "review": "Henry provided clear and concise feedback, which made the development process smooth. He was easy to work with and very responsive."
                 }
+               
+               
 
             ];
 
@@ -309,10 +301,10 @@
 
                 data.forEach(item => {
                     const card = document.createElement('div');
-                    card.className = 'bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300';
+                    card.className = 'bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow';
 
                     card.innerHTML = `
-      <img src="${item.image}" alt="${item.name}" class="w-full h-40 object-cover rounded-t-lg mb-4">
+      <img src="${item.image}" alt="${item.name}  class="w-full h-80 object-cover rounded-t-lg mb-4 hover:scale-125 duration-300">
       <h2 class="text-xl font-semibold mb-2">${item.name}</h2>
       <p class="text-gray-600">${item.review}</p>
     `;

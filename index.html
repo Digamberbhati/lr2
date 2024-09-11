@@ -23,16 +23,16 @@
                 </a>
                 <!-- menu icon -->
                 <div class="flex md:hidden space-x-3">
-                    <button id="menu-toggle" class="p-2 w-10 h-10 inline-flex items-center justify-center text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200">
+                    <button id="menu-toggle" class="p-2 w-8 h-8 inline-flex items-center bg-zinc-400   justify-center text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200">
                         <span class="sr-only">Open main menu</span>
-                        <img src="images/svg/menu.svg" alt="menu" class="w-6 h-6 ">
+                        <img src="images/svg/menu.svg" alt="menu" class="w-4 h-4 ">
                     </button>
                 </div>
                 <!-- routes -->
-                <div class="hidden w-full md:flex md:w-auto md:order-1" id="navbar">
+                <div class="hidden  w-full md:flex md:w-auto md:order-1" id="navbar">
                     <ul class="flex flex-col w-full p-4 md:p-0 mt-4 font-medium flex items-center rounded-lg text-white  md:flex-row md:space-x-8 md:mt-0 bg-gray-900">
                         <li class="w-full text-right ">
-                            <a href="index.html" class="block py-2 px-3 text-blue-700  " aria-current="page">Home</a>
+                            <a href="index.html" class="block py-2 px-3 hover:text-blue-700  " >Home</a>
                         </li>
                         <li class="w-full text-right ">
                             <a href="about.html" class="block py-2 px-3  hover:text-blue-700 sm:bg-transparent  md:p-0">About</a>
@@ -61,10 +61,10 @@
         <section class="hero relative" id="home">
             <div class="absolute "></div>
             <div class="relative mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center">
-                <div class="max-w-xl text-center sm:text-left">
-                    <h1 class="text-3xl font-extrabold text-white sm:text-5xl">
+                <div class="max-w-xl text-center pt-20 sm:pt-0 bottom-0 sm:text-left ">
+                    <h1 class="text-4xl font-extrabold text-white sm:text-5xl">
                         Let us find your
-                        <strong class="block font-extrabold text-blue-700"> Beast Version. </strong>
+                        <strong class="block font-extrabold text-blue-700 text-6xl"> Beast Version. </strong>
                     </h1>
                     <p class="mt-4 max-w-lg text-white sm:text-xl">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt illo tenetur fuga ducimus numquam ea!</p>
                     <div class="mt-8 flex flex-wrap gap-4">
@@ -132,7 +132,7 @@
 
 
 
-    <!-- about -->
+    <!-- about why choose us -->
 
       <main>    
 <section class="about  text-textdark px-8 pt-9 pb-6 "
@@ -149,51 +149,81 @@
 
 
   <!-- cards -->
-          <div class="wrapper  sm:max-w-screen-xl mx-auto mt-8 w-full  flex flex-col items-center gap-8 sm:flex-row ">
-            <div class="card ">
-                <img src="images/clients/client1.jpg" alt="" loading="lazy">
-                <div class="info">
-                    <h1>Persnol Training</h1>
-                    <p>Lorem ipsum is simply dummy text from the printing and typing industry</p>
-                    <a href="#" class="btn">Read More</a>
-                </div>
-                <h1 class="absolute bottom-4 uppercase hover:hidden font-black sm:text-[2vw] text-[4vh] text-zinc-200 ">Persnol Training</h1>
-            </div>
-            <div class="card">
-                <img src="images/clients/client2.jpg" alt="" loading="lazy">
-                <div class="info">
-                    <h1>Home workout</h1>
-                    <p>Lorem ipsum is simply dummy text from the printing and typing industry</p>
-                    <a href="#" class="btn">Read More</a>
-                </div>
-                <h1 class="absolute bottom-4 uppercase hover:hidden font-black sm:text-[2vw] text-[4vh] text-zinc-200 ">Home workout</h1>
-            </div>
-            <div class="card ">
-                <img src="images/clients/client3.jpg" alt="" loading="lazy">
-                <div class="info">
-                    <h1>Weight Lifting</h1>
-                    <p>Lorem ipsum is simply dummy text from the printing and typing industry</p>
-                    <a href="#" class="btn">Read More</a>
-                </div>
-                <h1 class="absolute bottom-4 uppercase hover:hidden font-black sm:text-[2vw] text-[4vh] text-zinc-200 ">Weight Lifting </h1>
-               
-            </div>
-            <div class="card">
-                <img src="images/clients/client4.jpg" alt="" loading="lazy">
-                <div class="info">
-                    <h1>Arm wrestling</h1>
-                    <p>Lorem ipsum is simply dummy text from the printing and typing industry</p>
-                    <a href="#" class="btn">Read More</a>
-                </div>
-                <h1 class="absolute bottom-4 uppercase hover:hidden font-black sm:text-[2vw] text-[4vh] text-zinc-200 ">Arm wrestling</h1>
-            </div>
+  <div class="wrapper sm:max-w-screen-xl mx-auto mt-8 w-full flex flex-col items-center gap-8 sm:flex-row">
+
+    <!-- Personal Training -->
+    <div class="card relative">
+        <img src="images/personal/pt.jpg" alt="" loading="lazy" class="filter drop-shadow-xl w-full h-full object-cover">
+        
+        <!-- Gradient overlay -->
+        <div class="gradient-overlay absolute inset-0"></div>
+        
+        <div class="info absolute inset-0 flex flex-col justify-center items-start text-white z-10">
+            <h1>Personal Training</h1>
+            <p>Lorem ipsum is simply dummy text from the printing and typing industry</p>
+            <a href="join.html" class="btn">Join Now</a>
         </div>
+        
+        <h1 class="absolute bottom-4 uppercase font-black sm:text-[2vw] text-[4vh] text-zinc-200">Personal Training</h1>
+    </div>
+
+    <!-- Home Workout -->
+    <div class="card relative">
+        <img src="images/personal/hw.jpg" alt="" loading="lazy" class="filter drop-shadow-xl w-full h-full object-cover">
+        
+        <!-- Gradient overlay -->
+        <div class="gradient-overlay absolute inset-0"></div>
+        
+        <div class="info absolute inset-0 flex flex-col justify-center items-start text-white z-10">
+            <h1>Home Workout</h1>
+            <p>Lorem ipsum is simply dummy text from the printing and typing industry</p>
+            <a href="join.html" class="btn">Join Now</a>
+        </div>
+        
+        <h1 class="absolute bottom-4 uppercase font-black sm:text-[2vw] text-[4vh] text-zinc-200">Home Workout</h1>
+    </div>
+
+    <!-- Weight Lifting -->
+    <div class="card relative">
+        <img src="images/personal/wt.png" alt="" loading="lazy" class="filter drop-shadow-xl w-full h-full object-cover">
+        
+        <!-- Gradient overlay -->
+        <div class="gradient-overlay absolute inset-0"></div>
+        
+        <div class="info absolute inset-0 flex flex-col justify-center items-start text-white z-10">
+            <h1>Weight Lifting</h1>
+            <p>Lorem ipsum is simply dummy text from the printing and typing industry</p>
+            <a href="join.html" class="btn">Join Now</a>
+        </div>
+        
+        <h1 class="absolute bottom-4 uppercase font-black sm:text-[2vw] text-[4vh] text-zinc-200">Weight Lifting</h1>
+    </div>
+
+    <!-- Arm Wrestling -->
+    <div class="card relative">
+        <img src="images/personal/arm.jpg" alt="" loading="lazy" class="filter drop-shadow-xl w-full h-full object-cover">
+        
+        <!-- Gradient overlay -->
+        <div class="gradient-overlay absolute inset-0"></div>
+        
+        <div class="info absolute inset-0 flex flex-col justify-center items-start text-white z-10">
+            <h1>Arm Wrestling</h1>
+            <p>Lorem ipsum is simply dummy text from the printing and typing industry</p>
+            <a href="join.html" class="btn">Join Now</a>
+        </div>
+        
+        <h1 class="absolute bottom-4 uppercase font-black sm:text-[2vw] text-[4vh] text-zinc-200">Arm Wrestling</h1>
+    </div>
+
+</div>
           
       </div>
   
   </section>
 
 
+
+  <!-- achiment -->
   <section class="timeline  mx-auto max-w-screen-lg mt-10 mb-10 px-4">
 
     <h1 class=" sm:text-[4vw] text-[4vh] mb-4 font-black tracking-tight text-center mt-8 ">Lokesh <span class=" text-blue-700"> Achievement </span> </h1>
@@ -229,44 +259,141 @@
     <section class="mb-10">
         <h1 class=" sm:text-[4vw] text-[4vh] mb-4 font-black tracking-tight text-center mt-8 ">Our <span class=" text-blue-700"> Team </span> </h1>
         <div class="wrapper sm:max-w-screen-xl mx-auto mt-8 w-full  flex flex-col items-center gap-8 sm:flex-row ">
-            <div class="card ">
-                <img src="images/clients/client1.jpg" alt="" loading="lazy">
-                <div class="info">
+
+
+
+            <div class="card relative">
+        <img src="images/personal/pt.jpg" alt="" loading="lazy" class="filter drop-shadow-xl w-full h-full object-cover">
+        
+        <!-- Gradient overlay -->
+        <div class="gradient-overlay absolute inset-0"></div>
+        
+        <div class="info absolute inset-0 flex flex-col justify-center items-start text-white z-10">
+            <h1>Lokesh Rajput</h1>
+            <p>Lorem ipsum is simply dummy text from the printing and typing industry</p>
+            <a href="https://www.instagram.com/lokesh_rajput07/" class="btn" target="_blank">Visit </a>
+        </div>
+        
+        <h1 class="absolute bottom-4 uppercase font-black sm:text-[2vw] text-[4vh] text-zinc-200">Lokesh Rajput</h1>
+            </div>
+
+            <div class="card relative">
+                <img src="images/personal/pt.jpg" alt="" loading="lazy" class="filter drop-shadow-xl w-full h-full object-cover">
+                
+                <!-- Gradient overlay -->
+                <div class="gradient-overlay absolute inset-0"></div>
+                
+                <div class="info absolute inset-0 flex flex-col justify-center items-start text-white z-10">
                     <h1>Lokesh Rajput</h1>
                     <p>Lorem ipsum is simply dummy text from the printing and typing industry</p>
-                    <a href="#" class="btn">View </a>
+                    <a href="https://www.instagram.com/lokesh_rajput07/" class="btn" target="_blank">Visit </a>
                 </div>
-                <h1 class="absolute bottom-4 uppercase hover:hidden font-black sm:text-[2vw] text-[4vh] text-zinc-200 ">Lokesh Rajput</h1>
-            </div>
-            <div class="card">
-                <img src="images/clients/client2.jpg" alt="" loading="lazy">
-                <div class="info">
-                    <h1>Home workout</h1>
-                    <p>Lorem ipsum is simply dummy text from the printing and typing industry</p>
-                    <a href="#" class="btn">View </a>
-                </div>
-                <h1 class="absolute bottom-4 uppercase hover:hidden font-black sm:text-[2vw] text-[4vh] text-zinc-200 ">Lokesh Rajput</h1>
-            </div>
-            <div class="card">
-                <img src="images/clients/client3.jpg" alt="" loading="lazy">
-                <div class="info">
-                    <h1>Weight Lifting</h1>
-                    <p>Lorem ipsum is simply dummy text from the printing and typing industry</p>
-                    <a href="#" class="btn">View </a>
-                </div>
-                <h1 class="absolute bottom-4 uppercase hover:hidden font-black sm:text-[2vw] text-[4vh] text-zinc-200 ">Lokesh Rajput</h1>
-            </div>
-            <div class="card">
-                <img src="images/clients/client4.jpg" alt="" loading="lazy">
-                <div class="info">
-                    <h1>Arm wrestling</h1>
-                    <p>Lorem ipsum is simply dummy text from the printing and typing industry</p>
-                    <a href="#" class="btn">View </a>
-                </div>
-                <h1 class="absolute bottom-4 uppercase hover:hidden font-black sm:text-[2vw] text-[4vh] text-zinc-200">Lokesh Rajput</h1>
-            </div>
+                
+                <h1 class="absolute bottom-4 uppercase font-black sm:text-[2vw] text-[4vh] text-zinc-200">Lokesh Rajput</h1>
+                    </div>
+
+                    <div class="card relative">
+                        <img src="images/personal/pt.jpg" alt="" loading="lazy" class="filter drop-shadow-xl w-full h-full object-cover">
+                        
+                        <!-- Gradient overlay -->
+                        <div class="gradient-overlay absolute inset-0"></div>
+                        
+                        <div class="info absolute inset-0 flex flex-col justify-center items-start text-white z-10">
+                            <h1>Lokesh Rajput</h1>
+                            <p>Lorem ipsum is simply dummy text from the printing and typing industry</p>
+                            <a href="https://www.instagram.com/lokesh_rajput07/" class="btn" target="_blank">Visit </a>
+                        </div>
+                        
+                        <h1 class="absolute bottom-4 uppercase font-black sm:text-[2vw] text-[4vh] text-zinc-200">Lokesh Rajput</h1>
+                            </div>
+                
+                            <div class="card relative">
+                                <img src="images/personal/pt.jpg" alt="" loading="lazy" class="filter drop-shadow-xl w-full h-full object-cover">
+                                
+                                <!-- Gradient overlay -->
+                                <div class="gradient-overlay absolute inset-0"></div>
+                                
+                                <div class="info absolute inset-0 flex flex-col justify-center items-start text-white z-10">
+                                    <h1>Lokesh Rajput</h1>
+                                    <p>Lorem ipsum is simply dummy text from the printing and typing industry</p>
+                                    <a href="https://www.instagram.com/lokesh_rajput07/" class="btn" target="_blank">Visit </a>
+                                </div>
+                                
+                                <h1 class="absolute bottom-4 uppercase font-black sm:text-[2vw] text-[4vh] text-zinc-200">Lokesh Rajput</h1>
+                                    </div>
+                        
         </div>
     </section>
+
+
+<!-- Our Gallery -->
+
+        <section class="pb-10 pt-20">
+            <h1 class=" sm:text-[4vw] text-[4vh] mb-4 font-black tracking-tight text-center mt-8 ">Our <span class=" text-blue-700"> Gallery</span> </h1>
+        <div class="wrapper sm:max-w-screen-xl mx-auto mt-8 w-full  flex flex-col items-center gap-8 sm:flex-row ">
+
+                <!-- Gallery images -->
+
+                <div class="custom-wrapper">
+                    <div class="custom-gallery">
+                        <div class="custom-gallery__item custom-gallery__item--1">
+                            <a href="#" class="custom-gallery__link ">
+                                <img src="images/personal/cleb.jpg" class="custom-gallery__image"  loading="lazy"  />
+                                <div class="custom-gallery__overlay ">
+                                    <span>Eating Panda</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="custom-gallery__item custom-gallery__item--2">
+                            <a href="#" class="custom-gallery__link">
+                                <img src="images/personal/meetup.jpg" class="custom-gallery__image object-top"  />
+                                <div class="custom-gallery__overlay">
+                                    <span>Roaring Lion</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="custom-gallery__item custom-gallery__item--3">
+                            <a href="#" class="custom-gallery__link">
+                                <img src="images/personal/award.jpg" class="custom-gallery__image"  loading="lazy" />
+                                <div class="custom-gallery__overlay">
+                                    <span>Elephants in a field</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="custom-gallery__item custom-gallery__item--4">
+                            <a href="#" class="custom-gallery__link">
+                                <img src="images/personal/brand.jpg" class="custom-gallery__image"  loading="lazy" />
+                                <div class="custom-gallery__overlay">
+                                    <span>Buck in the wild</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="custom-gallery__item custom-gallery__item--5">
+                            <a href="#" class="custom-gallery__link">
+                                <img src="images/personal/group.jpg" class="custom-gallery__image"  loading="lazy" />
+                                <div class="custom-gallery__overlay">
+                                    <span>A little fox</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="custom-gallery__item custom-gallery__item--6">
+                            <a href="#" class="custom-gallery__link">
+                                <img src="images/personal/teamup.png" class="custom-gallery__image"  loading="lazy" />
+                                <div class="custom-gallery__overlay">
+                                    <span>Group of horses</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+
+        </section>
+
+
+
+
+
     <!-- footer --> 
 <footer class="bg-gray-900">
     <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
@@ -315,8 +442,8 @@
         </div>
         <hr class="my-6 border-gray-700 sm:mx-auto lg:my-8" />
         <div class="sm:flex sm:items-center sm:justify-between">
-            <span class="text-sm text-gray-400 sm:text-center">© 2023 
-                <a href="#" class="hover:underline">Flowbite™</a>. All Rights Reserved.</span>
+            <span class="text-sm text-gray-400 sm:text-center">© 2024 
+                <a href="https://www.instagram.com/lr_supplements07/" class="hover:underline" target="_blank">LR Supplements</a>. All Rights Reserved.</span>
             <div class="flex mt-4 sm:justify-center sm:mt-0">
                 <a href="#" 
                 target="_blank"

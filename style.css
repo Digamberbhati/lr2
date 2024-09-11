@@ -84,7 +84,7 @@ main{
   width: 100%; /* Full width */
 }
 
-#contact {
+.contact {
   background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('images/gym.jpg');
   background-size: cover;
   background-position: center;

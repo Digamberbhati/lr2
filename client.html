@@ -68,74 +68,70 @@
 
 
         <!-- carousel starts -->
-        <div class="container">
-
-            <div class="slide">
-
-
-                <div class="item" style="background-image: url(./images/personal/arm.jpg); background-position: center;">
-                    <div class="content">
-                        <div class="name">Switzerland</div>
-                        <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
-                        <button>See More</button>
+       <section class="bg-red-400 h-screen w-full">
+        <div class="custom-container w-full h-full">
+            <div class="custom-slide">
+                <div class="custom-item" style="background-image: url(./images/personal/arm.jpg); background-position: top;">
+                    <div class="custom-content">
+                        <div class="custom-name">Switzerland</div>
+                        <div class="custom-des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+                        <button class="custom-btn">See More</button>
                     </div>
                 </div>
-                <div class="item" style="background-image: url(./images/personal/award.jpg);">
-                    <div class="content">
-                        <div class="name">Finland</div>
-                        <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
-                        <button>See More</button>
+                <div class="custom-item" style="background-image: url(./images/personal/award.jpg);background-position: top;">
+                    <div class="custom-content">
+                        <div class="custom-name">Finland</div>
+                        <div class="custom-des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+                        <button class="custom-btn">See More</button>
                     </div>
                 </div>
-                <div class="item" style="background-image: url(./images//personal/cleb.jpg);">
-                    <div class="content">
-                        <div class="name">Iceland</div>
-                        <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
-                        <button>See More</button>
+                <div class="custom-item" style="background-image: url(./images/personal/cleb.jpg);background-position: top;">
+                    <div class="custom-content">
+                        <div class="custom-name">Iceland</div>
+                        <div class="custom-des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+                        <button class="custom-btn">See More</button>
                     </div>
                 </div>
-                <div class="item" style="background-image: url(./images/personal/group.jpg);">
-                    <div class="content">
-                        <div class="name">Australia</div>
-                        <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
-                        <button>See More</button>
+                <div class="custom-item" style="background-image: url(./images/personal/group.jpg);background-position: top;">
+                    <div class="custom-content">
+                        <div class="custom-name">Australia</div>
+                        <div class="custom-des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+                        <button class="custom-btn">See More</button>
                     </div>
                 </div>
-                <div class="item" style="background-image: url(./images/personal/hw.jpg);">
-                    <div class="content">
-                        <div class="name">Netherland</div>
-                        <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
-                        <button>See More</button>
+                <div class="custom-item" style="background-image: url(./images/personal/hw.jpg);background-position: top;">
+                    <div class="custom-content">
+                        <div class="custom-name">Netherlands</div>
+                        <div class="custom-des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+                        <button class="custom-btn">See More</button>
                     </div>
                 </div>
-                <div class="item" style="background-image: url(./images/personal/meetup.jpg);">
-                    <div class="content">
-                        <div class="name">Ireland</div>
-                        <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
-                        <button>See More</button>
+                <div class="custom-item" style="background-image: url(./images/personal/meetup.jpg);background-position: top;">
+                    <div class="custom-content">
+                        <div class="custom-name">Ireland</div>
+                        <div class="custom-des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+                        <button class="custom-btn">See More</button>
                     </div>
                 </div>
-
             </div>
-
-            <div class="button">
-                <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
-                <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+            <div class="custom-button">
+                <button class="custom-prev"><i class="fa-solid fa-arrow-left"></i></button>
+                <button class="custom-next"><i class="fa-solid fa-arrow-right"></i></button>
             </div>
-
         </div>
+       </section>
+        
     
 
         <!-- carasoul end -->
 
+
         <!-- our client starts -->
        
-       
-    
         <div class="py-12 px-16">
             <!-- <div class="text-center text-blue-700 text-5xl text-bold">Our clients</div> -->
             <h1 class=" sm:text-[4vw] text-[4vh] mb-4 font-black tracking-tight text-center mt-8 text-blue-700">Our Clients</h1>
-        <div id="cards-container" class="grid gap-4 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 my-6 px-3 px-3">
+        <div id="cards-container" class="grid gap-4 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 my-6 px-3">
         </div>
         </div>
 
@@ -261,18 +257,21 @@
 
             ];
 
-            let next = document.querySelector('.next')
-            let prev = document.querySelector('.prev')
+            // carsoul code stars
 
-            next.addEventListener('click', function () {
-                let items = document.querySelectorAll('.item')
-                document.querySelector('.slide').appendChild(items[0])
-            })
+            let next = document.querySelector('.custom-next');
+let prev = document.querySelector('.custom-prev');
 
-            prev.addEventListener('click', function () {
-                let items = document.querySelectorAll('.item')
-                document.querySelector('.slide').prepend(items[items.length - 1]) // here the length of items = 6
-            })
+next.addEventListener('click', function() {
+    let items = document.querySelectorAll('.custom-item');
+    document.querySelector('.custom-slide').appendChild(items[0]);
+});
+
+prev.addEventListener('click', function() {
+    let items = document.querySelectorAll('.custom-item');
+    document.querySelector('.custom-slide').prepend(items[items.length - 1]);
+});
+//  carsoul code ends
 
 
             // clients code

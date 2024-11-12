@@ -93,12 +93,12 @@
       style="background-image: url('images/photos/lokesh2.jpg');"
       ;
     >
-      <div class="py-8 lg:py-16 mr-[40rem] pr-40 mx-auto max-w-screen-md text-white">
-        <h2 class="mb-4 text-4xl tracking-tight font-extrabold ">
+      <div class="py-8 lg:py-16 md:mr-[40rem] md:pr-40 mx-auto max-w-screen-md text-white">
+        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center md:text-left">
           Contact Us
         </h2>
         <p
-          class="mb-8 lg:mb-16 font-light text-gray-300 sm:text-xl"
+          class="mb-8 lg:mb-16 font-light text-gray-300 sm:text-2xl text-center md:text-left"
         >
           We’re here to answer your questions! fill the form for your queries
         </p>
@@ -115,47 +115,47 @@
             name="access_key"
             value="379d7b37-1aed-444c-affe-09ed08831892"
           />
-          <div>
+          <div class="text-center">
             <label
               for="email"
-              class="block mb-2 text-sm font-bold text-gray-100"
+              class="block mb-2 text-sm font-bold text-gray-100 md:text-left"
               >Your email</label
             >
             <input
               type="email"
               name="email"
               id="email"
-              class="rounded-lg border border-2 p-2.5 w-full outline-none bg-zinc-200 text-black"
-              placeholder="name@flowbite.com"
+              class="rounded-lg border border-2 p-2.5 w-[85vw] outline-none bg-zinc-200 text-black md:w-full"
+              placeholder=""
               required
             />
           </div>
-          <div>
+          <div class="text-center">
             <label
               for="subject"
-              class="block mb-2 text-sm font-bold text-gray-100"
+              class="block mb-2 text-sm font-bold text-gray-100 md:text-left "
               >Subject</label
             >
             <input
               type="text"
               name="subject"
               id="subject"
-              class="rounded-lg border border-2 p-2.5 w-full outline-none bg-zinc-200 text-black"
-              placeholder="Let us know how we can help you"
+              class="rounded-lg border border-2 p-2.5 w-[85vw] md:w-full  outline-none bg-zinc-200 text-black"
+              placeholder=""
               required
             />
           </div>
-          <div class="sm:col-span-2">
+          <div class="sm:col-span-2 text-center">
             <label
               for="message"
               class="block mb-2 text-sm font-bold text-gray-100"
-              >Your message</label
+              ></label
             >
             <textarea
               id="message"
               name="message"
               rows="6"
-              class="rounded-lg border border-2 p-2.5 w-full outline-none bg-zinc-200 text-black"
+              class="rounded-lg border border-2 p-2.5 w-[85vw] md:w-full outline-none bg-zinc-200 text-black"
               placeholder="Leave a comment..."
             ></textarea>
           </div>

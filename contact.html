@@ -1,177 +1,337 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
     <title>Contact us</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="images/lokesh.png" type="image/x-icon">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="images/lokesh.png" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <!-- Navbar -->
+      <nav
+        class="bg-gray-900 w-full z-20 top-0 left-0 border-b border-gray-600"
+      >
+        <div
+          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+        >
+          <!-- logo -->
+          <a href="index.html" class="flex items-center space-x-3">
+            <img src="images/lokesh.png" class="h-8" alt="Fitness GYM Logo" />
+          </a>
+          <!-- menu icon -->
+          <div class="flex md:hidden space-x-3">
+            <button
+              id="menu-toggle"
+              class="p-2 w-8 h-8 inline-flex items-center bg-zinc-400 justify-center text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+            >
+              <span class="sr-only">Open main menu</span>
+              <img src="images/svg/menu.svg" alt="menu" class="w-4 h-4" />
+            </button>
+          </div>
+          <!-- routes -->
+          <div class="hidden w-full md:flex md:w-auto md:order-1" id="navbar">
+            <ul
+              class="flex flex-col w-full p-4 md:p-0 mt-4 font-medium flex items-center rounded-lg text-white md:flex-row md:space-x-8 md:mt-0 bg-gray-900"
+            >
+              <li class="w-full text-right">
+                <a href="index.html" class="block py-2 px-3 hover:text-blue-700"
+                  >Home</a
+                >
+              </li>
+              <li class="w-full text-right">
+                <a
+                  href="about.html"
+                  class="block py-2 px-3 hover:text-blue-700 sm:bg-transparent md:p-0"
+                  >About</a
+                >
+              </li>
+              <li class="w-full text-right">
+                <a
+                  href="client.html"
+                  class="block py-2 px-3 hover:text-blue-700 sm:bg-transparent md:p-0"
+                  >Clients</a
+                >
+              </li>
+              <li class="w-full text-right">
+                <a
+                  href="diet.html"
+                  class="block py-2 px-3 hover:text-blue-700 sm:bg-transparent md:p-0"
+                  >Diet</a
+                >
+              </li>
+              <li class="w-full text-right">
+                <a
+                  href="training.html"
+                  class="block py-2 px-3 hover:text-blue-700 sm:bg-transparent md:p-0"
+                  >Training</a
+                >
+              </li>
+              <li class="w-full text-right">
+                <a
+                  href="contact.html"
+                  class="block py-2 px-3 hover:text-blue-700 sm:bg-transparent md:p-0"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-        <!-- header -->
-        <header>
-            <!-- Navbar -->
-            <nav class="bg-gray-900 w-full z-20 top-0 left-0 border-b border-gray-600">
-                <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-                    <!-- logo -->
-                    <a href="index.html" class="flex items-center space-x-3">
-                        <img src="images/lokesh.png" class="h-8" alt="Fitness GYM Logo">
-                    </a>
-                    <!-- menu icon -->
-                    <div class="flex md:hidden space-x-3">
-                        <button id="menu-toggle" class="p-2 w-8 h-8 inline-flex items-center bg-zinc-400   justify-center text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200">
-                            <span class="sr-only">Open main menu</span>
-                            <img src="images/svg/menu.svg" alt="menu" class="w-4 h-4 ">
-                        </button>
-                    </div>
-                    <!-- routes -->
-                    <div class="hidden  w-full md:flex md:w-auto md:order-1" id="navbar">
-                        <ul class="flex flex-col w-full p-4 md:p-0 mt-4 font-medium flex items-center rounded-lg text-white  md:flex-row md:space-x-8 md:mt-0 bg-gray-900">
-                            <li class="w-full text-right ">
-                                <a href="index.html" class="block py-2 px-3 hover:text-blue-700  " >Home</a>
-                            </li>
-                            <li class="w-full text-right ">
-                                <a href="about.html" class="block py-2 px-3  hover:text-blue-700 sm:bg-transparent  md:p-0">About</a>
-                            </li>
-                            <li class="w-full text-right ">
-                                <a href="client.html" class="block py-2 px-3  hover:text-blue-700 sm:bg-transparent  md:p-0">Clients</a>
-                            </li>
-                            <li class="w-full text-right ">
-                                <a href="diet.html" class="block py-2 px-3  hover:text-blue-700 sm:bg-transparent  md:p-0">Diet</a>
-                            </li>
-                            <li class="w-full text-right ">
-                                <a href="training.html" class="block py-2 px-3  hover:text-blue-700 sm:bg-transparent  md:p-0">Training</a>
-                            </li>
-                            <li class="w-full text-right ">
-                                <a href="contact.html" class="block py-2 px-3  hover:text-blue-700 sm:bg-transparent  md:p-0">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </header> 
-
-        <!-- header ends -->
-
-
-    <div class="contact pt-4" style="background-image: url('images/photos/lokesh1.jpg')";>
-    <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md text-white">
-        <h2 class="mb-4 text-4xl  tracking-tight font-extrabold text-center ">Contact Us</h2>
-        <p class="mb-8 lg:mb-16 font-light text-center text-gray-300 sm:text-xl">We’re here to answer your questions! fill the form for your queries</p>
+    <!-- header ends -->
+    <div
+      class="contact py-16"
+      style="background-image: url('images/photos/lokesh2.jpg');"
+      ;
+    >
+      <div class="py-8 lg:py-16 mr-[40rem] pr-40 mx-auto max-w-screen-md text-white">
+        <h2 class="mb-4 text-4xl tracking-tight font-extrabold ">
+          Contact Us
+        </h2>
+        <p
+          class="mb-8 lg:mb-16 font-light text-gray-300 sm:text-xl"
+        >
+          We’re here to answer your questions! fill the form for your queries
+        </p>
         <!-- contact form -->
-        
-        <form action="https://api.web3forms.com/submit" method="POST" class="space-y-8" id="myForm">
-            <input type="hidden" name="access_key" value="379d7b37-1aed-444c-affe-09ed08831892">
-            <div>
-                <label for="email" class="block mb-2 text-sm font-bold  text-gray-100">Your email</label>
-                <input type="email" name="email" id="email" class="rounded-lg border border-2 p-2.5 w-full outline-none  bg-zinc-200 text-black " placeholder="name@flowbite.com" required>
-            </div>
-            <div>
-                <label for="subject" class="block mb-2 text-sm font-bold text-gray-100">Subject</label>
-                <input type="text" name="subject" id="subject" class="rounded-lg border border-2 p-2.5 w-full outline-none bg-zinc-200 text-black " placeholder="Let us know how we can help you" required>
-            </div>
-            <div class="sm:col-span-2">
-                <label for="message" class="block mb-2 text-sm font-bold text-gray-100">Your message</label>
-                <textarea id="message" name="message" rows="6" class="rounded-lg border border-2 p-2.5 w-full outline-none bg-zinc-200 text-black " placeholder="Leave a comment..."></textarea>
-            </div>
-            <button type="submit" class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-[#2563eb] sm:w-fit hover:bg-[#1d4ed8] focus:ring-4 focus:outline-none focus:ring-[#1e40af]">
-                Send message
-              </button>
-              
+
+        <form
+          action="https://api.web3forms.com/submit"
+          method="POST"
+          class="space-y-8"
+          id="myForm"
+        >
+          <input
+            type="hidden"
+            name="access_key"
+            value="379d7b37-1aed-444c-affe-09ed08831892"
+          />
+          <div>
+            <label
+              for="email"
+              class="block mb-2 text-sm font-bold text-gray-100"
+              >Your email</label
+            >
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="rounded-lg border border-2 p-2.5 w-full outline-none bg-zinc-200 text-black"
+              placeholder="name@flowbite.com"
+              required
+            />
+          </div>
+          <div>
+            <label
+              for="subject"
+              class="block mb-2 text-sm font-bold text-gray-100"
+              >Subject</label
+            >
+            <input
+              type="text"
+              name="subject"
+              id="subject"
+              class="rounded-lg border border-2 p-2.5 w-full outline-none bg-zinc-200 text-black"
+              placeholder="Let us know how we can help you"
+              required
+            />
+          </div>
+          <div class="sm:col-span-2">
+            <label
+              for="message"
+              class="block mb-2 text-sm font-bold text-gray-100"
+              >Your message</label
+            >
+            <textarea
+              id="message"
+              name="message"
+              rows="6"
+              class="rounded-lg border border-2 p-2.5 w-full outline-none bg-zinc-200 text-black"
+              placeholder="Leave a comment..."
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-[#2563eb] sm:w-fit hover:bg-[#1d4ed8] focus:ring-4 focus:outline-none focus:ring-[#1e40af]"
+          >
+            Send message
+          </button>
         </form>
+      </div>
     </div>
-  </div>
 
+    <!-- footer -->
 
-
-<!-- footer -->
- 
-<footer class="bg-gray-900">
-    <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+    <footer class="bg-gray-900">
+      <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div class="md:flex md:justify-between">
-            <div class="mb-6 md:mb-0">
-                <a href="index.html" class="flex items-center">
-                    <img src="images/lokesh.png" class="h-8 me-3" alt="FlowBite Logo" />
-                    <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">LR Supplements</span>
-                </a>
+          <div class="mb-6 md:mb-0">
+            <a href="index.html" class="flex items-center">
+              <img
+                src="images/lokesh.png"
+                class="h-8 me-3"
+                alt="FlowBite Logo"
+              />
+              <span
+                class="self-center text-2xl font-semibold whitespace-nowrap text-white"
+                >LR Supplements</span
+              >
+            </a>
+          </div>
+          <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+            <div>
+              <h2 class="mb-6 text-sm font-semibold uppercase text-white">
+                Services
+              </h2>
+              <ul class="text-gray-400 font-medium">
+                <li class="mb-4">
+                  <a href="diet.html" class="hover:underline">Diet</a>
+                </li>
+                <li>
+                  <a href="training.html" class="hover:underline">Training</a>
+                </li>
+              </ul>
             </div>
-            <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
-                <div>
-                    <h2 class="mb-6 text-sm font-semibold uppercase text-white">Services</h2>
-                    <ul class="text-gray-400 font-medium">
-                        <li class="mb-4">
-                            <a href="diet.html" class="hover:underline">Diet</a>
-                        </li>
-                        <li>
-                            <a href="training.html" class="hover:underline">Training</a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <h2 class="mb-6 text-sm font-semibold uppercase text-white">Follow us</h2>
-                    <ul class="text-gray-400 font-medium">
-                        <li class="mb-4">
-                            <a href="https://www.instagram.com/lr_supplements07/" target="_blank" class="hover:underline">Instagram</a>
-                        </li>
-                        <li>
-                            <a href="https://www.youtube.com/@LokeshSinghRajputfitness" target="_blank" class="hover:underline">YouTube</a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <h2 class="mb-6 text-sm font-semibold uppercase text-white">Legal</h2>
-                    <ul class="text-gray-400 font-medium">
-                        <li class="mb-4">
-                            <a href="#" class="hover:underline" target="_blank">Privacy Policy</a>
-                        </li>
-                        <li>
-                            <a href="#" class="hover:underline" target="_blank">Terms &amp; Conditions</a>
-                        </li>
-                    </ul>
-                </div>
+            <div>
+              <h2 class="mb-6 text-sm font-semibold uppercase text-white">
+                Follow us
+              </h2>
+              <ul class="text-gray-400 font-medium">
+                <li class="mb-4">
+                  <a
+                    href="https://www.instagram.com/lr_supplements07/"
+                    target="_blank"
+                    class="hover:underline"
+                    >Instagram</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/@LokeshSinghRajputfitness"
+                    target="_blank"
+                    class="hover:underline"
+                    >YouTube</a
+                  >
+                </li>
+              </ul>
             </div>
+            <div>
+              <h2 class="mb-6 text-sm font-semibold uppercase text-white">
+                Legal
+              </h2>
+              <ul class="text-gray-400 font-medium">
+                <li class="mb-4">
+                  <a href="#" class="hover:underline" target="_blank"
+                    >Privacy Policy</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="hover:underline" target="_blank"
+                    >Terms &amp; Conditions</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
         <hr class="my-6 border-gray-700 sm:mx-auto lg:my-8" />
         <div class="sm:flex sm:items-center sm:justify-between">
-            <span class="text-sm text-gray-400 sm:text-center">© 2024 
-                <a href="https://www.instagram.com/lr_supplements07/" class="hover:underline" target="_blank">LR Supplements</a>. All Rights Reserved.</span>
-            <div class="flex mt-4 sm:justify-center sm:mt-0">
-                <a href="#" 
-                target="_blank"
-                class="text-gray-400 hover:text-white">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-                    <span class="sr-only">Facebook page</span>
-                </a>
-                <a href="https://www.instagram.com/lr_supplements07/"
-                target="_blank"
-                class="text-gray-400 hover:text-white ms-5">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
-                    <span class="sr-only">Instagram</span>
-                </a>
-                <a href="#" 
-                target="_blank"class="text-gray-400 hover:text-white ms-5">
-                    
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-twitter"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
-                    <span class="sr-only">Twitter page</span>
-                </a>
-            </div>
+          <span class="text-sm text-gray-400 sm:text-center"
+            >© 2024
+            <a
+              href="https://www.instagram.com/lr_supplements07/"
+              class="hover:underline"
+              target="_blank"
+              >LR Supplements</a
+            >. All Rights Reserved.</span
+          >
+          <div class="flex mt-4 sm:justify-center sm:mt-0">
+            <a href="#" target="_blank" class="text-gray-400 hover:text-white">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-facebook"
+              >
+                <path
+                  d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                />
+              </svg>
+              <span class="sr-only">Facebook page</span>
+            </a>
+            <a
+              href="https://www.instagram.com/lr_supplements07/"
+              target="_blank"
+              class="text-gray-400 hover:text-white ms-5"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-instagram"
+              >
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+              </svg>
+              <span class="sr-only">Instagram</span>
+            </a>
+            <a
+              href="#"
+              target="_blank"
+              class="text-gray-400 hover:text-white ms-5"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-twitter"
+              >
+                <path
+                  d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"
+                />
+              </svg>
+              <span class="sr-only">Twitter page</span>
+            </a>
+          </div>
         </div>
-    </div>
-</footer>
+      </div>
+    </footer>
 
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@beta/bundled/locomotive-scroll.min.js"></script>
-<script>
-    (function () {
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@beta/bundled/locomotive-scroll.min.js"></script>
+    <script>
+      (function () {
         const locomotiveScroll = new LocomotiveScroll();
-    })();
-</script>
+      })();
+    </script>
 
-<script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
